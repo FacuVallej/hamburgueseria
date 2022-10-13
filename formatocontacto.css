@@ -1,0 +1,223 @@
+/*CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*HEADER*/
+header {
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    padding: 0 50px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+.hambur a{
+    color: aliceblue;
+}
+
+.menu a {
+    color: aliceblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 1s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu,
+.esconder-menu {
+    color: blanchedalmond;
+}
+
+#check {
+    display: none;
+}
+
+/*CUERPO*/
+
+#formulario {
+    background-image: url(http://d2r9epyceweg5n.cloudfront.net/stores/001/179/202/products/packoklahoma11-c3f856f422aa8443d915884610590496-640-0.jpg);
+    background-size: 100vw 100vh;
+background-attachment: fixed;
+margin: 0;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 100px 80px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 7px;
+    font-family: monospace;
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+#boton {
+    background-color: rgb(255, 250, 194);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 290px;
+    min-width: 290px;
+}
+
+h3 {
+    color: antiquewhite;
+    text-align: center;
+    margin: 15px;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/*REDES*/
+
+#redes {
+    padding: 0px 50px;
+    background-color: rgba(77, 77, 92, 0.6);
+}
+
+.contenido-redes {
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-redes div {
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid white;
+}
+
+#foto-twitter {
+    border: none;
+}
+
+.contenido-redes div {
+    color: black;
+}
+
+.contenido-redes div h6 {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.derechos {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    form {width: 100%;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 215px;
+        min-width: 215px;
+    }
+
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    /*REDES*/
+
+    .contenido-redes {
+        flex-direction: column;
+    }
+
+    .contenido-redes div {
+        border: none;
+    }
+
+}
