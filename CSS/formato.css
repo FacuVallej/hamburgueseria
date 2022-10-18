@@ -1,12 +1,13 @@
+/*VARIABLES*/
 /*CSS*/
-/* line 3, ../proyecto/scss/formato.scss */
+/* line 9, ../proyecto/scss/formato.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
 /*HEADER*/
-/* line 9, ../proyecto/scss/formato.scss */
+/* line 15, ../proyecto/scss/formato.scss */
 header {
   height: 100px;
   background-color: black;
@@ -17,24 +18,24 @@ header {
   align-items: center;
 }
 
-/* line 19, ../proyecto/scss/formato.scss */
+/* line 25, ../proyecto/scss/formato.scss */
 body {
   background-color: black;
 }
 
-/* line 23, ../proyecto/scss/formato.scss */
+/* line 29, ../proyecto/scss/formato.scss */
 .logo {
   text-transform: uppercase;
   color: aliceblue;
   font-weight: 200;
 }
 
-/* line 30, ../proyecto/scss/formato.scss */
+/* line 36, ../proyecto/scss/formato.scss */
 .hambur a {
   color: aliceblue;
 }
 
-/* line 34, ../proyecto/scss/formato.scss */
+/* line 40, ../proyecto/scss/formato.scss */
 .menu a {
   color: aliceblue;
   text-transform: uppercase;
@@ -43,7 +44,7 @@ body {
   transition: 1s;
 }
 
-/* line 42, ../proyecto/scss/formato.scss */
+/* line 48, ../proyecto/scss/formato.scss */
 .mostrar-menu,
 .esconder-menu {
   font-size: 30px;
@@ -52,24 +53,24 @@ body {
   transition: 0.4s;
 }
 
-/* line 50, ../proyecto/scss/formato.scss */
+/* line 56, ../proyecto/scss/formato.scss */
 .mostrar-menu {
   order: 1;
 }
 
-/* line 54, ../proyecto/scss/formato.scss */
+/* line 60, ../proyecto/scss/formato.scss */
 .menu a:hover,
 .mostrar-menu,
 .esconder-menu {
   color: blanchedalmond;
 }
 
-/* line 60, ../proyecto/scss/formato.scss */
+/* line 66, ../proyecto/scss/formato.scss */
 #check {
   display: none;
 }
 
-/* line 64, ../proyecto/scss/formato.scss */
+/* line 70, ../proyecto/scss/formato.scss */
 h1 {
   text-align: center;
   font-size: 100px;
@@ -81,7 +82,7 @@ h1 {
 /*PRINCIPAL/*
 
 /*BANNER*/
-/* line 76, ../proyecto/scss/formato.scss */
+/* line 82, ../proyecto/scss/formato.scss */
 #banner {
   padding: 0 50px;
   background-image: url(https://www.clarin.com/img/2021/06/17/LC25eDtCT_1200x630__1.jpg);
@@ -90,7 +91,7 @@ h1 {
   background-position: center;
 }
 
-/* line 84, ../proyecto/scss/formato.scss */
+/* line 90, ../proyecto/scss/formato.scss */
 #banner::before {
   content: "";
   background: rgba(30, 27, 27, 0.6);
@@ -100,7 +101,7 @@ h1 {
   left: 0;
 }
 
-/* line 93, ../proyecto/scss/formato.scss */
+/* line 99, ../proyecto/scss/formato.scss */
 .contenido-banner {
   position: relative;
   color: black;
@@ -110,20 +111,21 @@ h1 {
   justify-content: center;
 }
 
-/* line 101, ../proyecto/scss/formato.scss */
+/* line 107, ../proyecto/scss/formato.scss */
 .contenido-banner h3 {
   font-size: 40px;
   font-weight: 400;
+  font-family: courier;
   padding: 10px 0px;
   text-align: center;
 }
 
-/* line 108, ../proyecto/scss/formato.scss */
+/* line 115, ../proyecto/scss/formato.scss */
 .contenido-banner span {
   font-weight: 600;
 }
 
-/* line 114, ../proyecto/scss/formato.scss */
+/* line 121, ../proyecto/scss/formato.scss */
 .boton-none {
   text-decoration: none;
   color: aliceblue;
@@ -134,12 +136,12 @@ h1 {
   border-radius: 10px;
 }
 
-/* line 124, ../proyecto/scss/formato.scss */
+/* line 131, ../proyecto/scss/formato.scss */
 .boton-none:hover {
   background-color: bisque;
 }
 
-/* line 128, ../proyecto/scss/formato.scss */
+/* line 135, ../proyecto/scss/formato.scss */
 .boton {
   display: flex;
   justify-content: center;
@@ -147,7 +149,7 @@ h1 {
 }
 
 /*FOTOS*/
-/* line 135, ../proyecto/scss/formato.scss */
+/* line 142, ../proyecto/scss/formato.scss */
 #fotos {
   background-color: black;
   padding: 50px 50px;
@@ -156,30 +158,32 @@ h1 {
   text-align: center;
 }
 
-/* line 143, ../proyecto/scss/formato.scss */
+/* line 150, ../proyecto/scss/formato.scss */
 #fotos img {
   border-radius: 100%;
 }
 
-/* line 147, ../proyecto/scss/formato.scss */
+/* line 154, ../proyecto/scss/formato.scss */
 #fotos div {
   padding: 30px 30px;
 }
 
-/* line 150, ../proyecto/scss/formato.scss */
+/* line 157, ../proyecto/scss/formato.scss */
 #fotos div h4 {
   color: azure;
   font-size: 20px;
+  font-family: tahoma;
   margin: 15px 0px;
 }
 
-/* line 157, ../proyecto/scss/formato.scss */
+/* line 165, ../proyecto/scss/formato.scss */
 #fotos div p {
-  color: aliceblue;
+  color: white;
+  font-family: monospace;
   font-size: 18px;
 }
 
-/* line 162, ../proyecto/scss/formato.scss */
+/* line 171, ../proyecto/scss/formato.scss */
 .boton-promociones {
   display: inline-block;
   text-decoration: none;
@@ -191,7 +195,7 @@ h1 {
   transition: all 0.4s;
 }
 
-/* line 173, ../proyecto/scss/formato.scss */
+/* line 182, ../proyecto/scss/formato.scss */
 .boton-promociones:hover {
   background-color: bisque;
   color: black;
@@ -200,7 +204,7 @@ h1 {
 
 /*CONTACTO*/
 /*CUERPO*/
-/* line 183, ../proyecto/scss/formato.scss */
+/* line 192, ../proyecto/scss/formato.scss */
 #formulario {
   background-image: url(http://d2r9epyceweg5n.cloudfront.net/stores/001/179/202/products/packoklahoma11-c3f856f422aa8443d915884610590496-640-0.jpg);
   background-size: 100vw 100vh;
@@ -208,7 +212,7 @@ h1 {
   margin: 0;
 }
 
-/* line 190, ../proyecto/scss/formato.scss */
+/* line 199, ../proyecto/scss/formato.scss */
 form {
   width: 450px;
   margin: auto;
@@ -220,7 +224,7 @@ form {
   font-family: monospace;
 }
 
-/* line 201, ../proyecto/scss/formato.scss */
+/* line 210, ../proyecto/scss/formato.scss */
 h2 {
   color: aliceblue;
   text-align: center;
@@ -230,7 +234,7 @@ h2 {
   font-family: monospace;
 }
 
-/* line 210, ../proyecto/scss/formato.scss */
+/* line 219, ../proyecto/scss/formato.scss */
 input,
 textarea {
   width: 100%;
@@ -241,19 +245,19 @@ textarea {
   border: none;
 }
 
-/* line 220, ../proyecto/scss/formato.scss */
+/* line 229, ../proyecto/scss/formato.scss */
 #boton {
   background-color: #fffac2;
   padding: 10px;
   border-radius: 10px;
 }
 
-/* line 226, ../proyecto/scss/formato.scss */
+/* line 235, ../proyecto/scss/formato.scss */
 #boton:hover {
   cursor: pointer;
 }
 
-/* line 230, ../proyecto/scss/formato.scss */
+/* line 239, ../proyecto/scss/formato.scss */
 textarea {
   min-height: 100px;
   max-height: 200px;
@@ -261,7 +265,7 @@ textarea {
   min-width: 290px;
 }
 
-/* line 237, ../proyecto/scss/formato.scss */
+/* line 246, ../proyecto/scss/formato.scss */
 h3 {
   color: antiquewhite;
   text-align: center;
@@ -274,12 +278,12 @@ h3 {
 
 /*MENU*/
 /*MENU ENTERO*/
-/* line 251, ../proyecto/scss/formato.scss */
+/* line 260, ../proyecto/scss/formato.scss */
 body {
   background-color: #000000;
 }
 
-/* line 255, ../proyecto/scss/formato.scss */
+/* line 264, ../proyecto/scss/formato.scss */
 .menus {
   padding: 0;
   display: grid;
@@ -287,7 +291,7 @@ body {
   grid-gap: 20px 40px;
 }
 
-/* line 262, ../proyecto/scss/formato.scss */
+/* line 271, ../proyecto/scss/formato.scss */
 .heading {
   background-color: #090423;
   color: #ffffff;
@@ -297,7 +301,7 @@ body {
   text-align: center;
 }
 
-/* line 271, ../proyecto/scss/formato.scss */
+/* line 280, ../proyecto/scss/formato.scss */
 .heading > h1 {
   font-weight: 400;
   font-size: 30px;
@@ -305,14 +309,14 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 278, ../proyecto/scss/formato.scss */
+/* line 287, ../proyecto/scss/formato.scss */
 .heading > h3 {
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 5px;
 }
 
-/* line 284, ../proyecto/scss/formato.scss */
+/* line 293, ../proyecto/scss/formato.scss */
 .food-items {
   display: grid;
   position: relative;
@@ -322,14 +326,14 @@ body {
   margin: 0 20px;
 }
 
-/* line 292, ../proyecto/scss/formato.scss */
+/* line 301, ../proyecto/scss/formato.scss */
 .food-items img {
   position: relative;
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
 
-/* line 299, ../proyecto/scss/formato.scss */
+/* line 308, ../proyecto/scss/formato.scss */
 .details {
   padding: 20px 10px;
   display: grid;
@@ -337,25 +341,25 @@ body {
   grid-row-gap: 15px;
 }
 
-/* line 306, ../proyecto/scss/formato.scss */
+/* line 315, ../proyecto/scss/formato.scss */
 .details-sub {
   display: grid;
   grid-template-columns: auto auto;
 }
 
-/* line 311, ../proyecto/scss/formato.scss */
+/* line 320, ../proyecto/scss/formato.scss */
 .details-sub > h5 {
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
 }
 
-/* line 317, ../proyecto/scss/formato.scss */
+/* line 326, ../proyecto/scss/formato.scss */
 .price {
   text-align: right;
 }
 
-/* line 321, ../proyecto/scss/formato.scss */
+/* line 330, ../proyecto/scss/formato.scss */
 .details > p {
   color: #6f6f6f;
   font-size: 15px;
@@ -365,7 +369,7 @@ body {
   color: #ffffff;
 }
 
-/* line 330, ../proyecto/scss/formato.scss */
+/* line 339, ../proyecto/scss/formato.scss */
 .details > button {
   background-color: #cb202d;
   border: none;
@@ -378,13 +382,13 @@ body {
 
 /*NOSOTROS*/
 /*CUERPO*/
-/* line 344, ../proyecto/scss/formato.scss */
+/* line 353, ../proyecto/scss/formato.scss */
 .nosotros {
   padding: 0 50px;
   background-color: black;
 }
 
-/* line 350, ../proyecto/scss/formato.scss */
+/* line 359, ../proyecto/scss/formato.scss */
 #cuerpo h1 {
   font-size: 40px;
   font-weight: 400;
@@ -392,14 +396,14 @@ body {
   color: aliceblue;
 }
 
-/* line 357, ../proyecto/scss/formato.scss */
+/* line 366, ../proyecto/scss/formato.scss */
 #cuerpo p {
   color: aliceblue;
   font-size: 17px;
   padding: 10px 0px;
 }
 
-/* line 364, ../proyecto/scss/formato.scss */
+/* line 373, ../proyecto/scss/formato.scss */
 .video {
   display: flex;
   justify-content: center;
@@ -409,7 +413,7 @@ body {
 
 /*SUCURSALES*/
 /*local caballito*/
-/* line 375, ../proyecto/scss/formato.scss */
+/* line 384, ../proyecto/scss/formato.scss */
 #imagen20 {
   display: flex;
   text-align: center;
@@ -417,28 +421,28 @@ body {
   margin: 20px 0px;
 }
 
-/* line 382, ../proyecto/scss/formato.scss */
+/* line 391, ../proyecto/scss/formato.scss */
 #sucursal1 p {
   text-align: center;
   font-size: 40px;
   color: white;
 }
 
-/* line 388, ../proyecto/scss/formato.scss */
+/* line 397, ../proyecto/scss/formato.scss */
 h2 {
   text-align: center;
   font-size: 30px;
   color: white;
 }
 
-/* line 394, ../proyecto/scss/formato.scss */
+/* line 403, ../proyecto/scss/formato.scss */
 #mapacaballito {
   display: flex;
   justify-content: center;
   margin: 30px 0;
 }
 
-/* line 400, ../proyecto/scss/formato.scss */
+/* line 409, ../proyecto/scss/formato.scss */
 #imagen30 {
   display: flex;
   text-align: center;
@@ -446,14 +450,14 @@ h2 {
   margin: 20px 0px;
 }
 
-/* line 407, ../proyecto/scss/formato.scss */
+/* line 416, ../proyecto/scss/formato.scss */
 #sucursal2 p {
   text-align: center;
   font-size: 40px;
   color: white;
 }
 
-/* line 413, ../proyecto/scss/formato.scss */
+/* line 422, ../proyecto/scss/formato.scss */
 #maparecoleta {
   display: flex;
   justify-content: center;
@@ -461,13 +465,13 @@ h2 {
 }
 
 /*REDES*/
-/* line 422, ../proyecto/scss/formato.scss */
+/* line 431, ../proyecto/scss/formato.scss */
 #redes {
   padding: 0px 50px;
   background-color: rgba(77, 77, 92, 0.6);
 }
 
-/* line 427, ../proyecto/scss/formato.scss */
+/* line 436, ../proyecto/scss/formato.scss */
 .contenido-redes {
   padding: 50px 50px 0px 50px;
   display: flex;
@@ -475,31 +479,31 @@ h2 {
   text-align: center;
 }
 
-/* line 432, ../proyecto/scss/formato.scss */
+/* line 441, ../proyecto/scss/formato.scss */
 .contenido-redes div {
   flex: 1;
   margin: 20px 0px;
   border-right: 2px solid white;
 }
 
-/* line 439, ../proyecto/scss/formato.scss */
+/* line 448, ../proyecto/scss/formato.scss */
 #foto-twitter {
   border: none;
 }
 
-/* line 443, ../proyecto/scss/formato.scss */
+/* line 452, ../proyecto/scss/formato.scss */
 .contenido-redes div {
   color: black;
 }
 
-/* line 445, ../proyecto/scss/formato.scss */
+/* line 454, ../proyecto/scss/formato.scss */
 .contenido-redes div h6 {
   font-size: 15px;
   font-weight: 100;
   margin: 10px 0px;
 }
 
-/* line 453, ../proyecto/scss/formato.scss */
+/* line 462, ../proyecto/scss/formato.scss */
 .derechos {
   text-align: center;
   padding-bottom: 50px;
@@ -508,12 +512,12 @@ h2 {
 /*RESPONSIVE*/
 @media (max-width: 768px) {
   /*HEADER*/
-  /* line 463, ../proyecto/scss/formato.scss */
+  /* line 472, ../proyecto/scss/formato.scss */
   .mostrar-menu,
   .esconder-menu {
     display: block;
   }
-  /* line 468, ../proyecto/scss/formato.scss */
+  /* line 477, ../proyecto/scss/formato.scss */
   .menu {
     position: fixed;
     width: 100%;
@@ -526,38 +530,38 @@ h2 {
     z-index: 100;
     transition: 0.8s;
   }
-  /* line 481, ../proyecto/scss/formato.scss */
+  /* line 490, ../proyecto/scss/formato.scss */
   .menu a {
     display: block;
     padding: 20px;
   }
-  /* line 486, ../proyecto/scss/formato.scss */
+  /* line 495, ../proyecto/scss/formato.scss */
   .esconder-menu {
     position: absolute;
     top: 40px;
     right: 40px;
   }
-  /* line 492, ../proyecto/scss/formato.scss */
+  /* line 501, ../proyecto/scss/formato.scss */
   #check:checked ~ .menu {
     right: 0;
   }
   /*PRINCIPAL*/
-  /* line 498, ../proyecto/scss/formato.scss */
+  /* line 507, ../proyecto/scss/formato.scss */
   .contenido-banner h3 {
     font-size: 25px;
   }
   /*FOTOS*/
-  /* line 503, ../proyecto/scss/formato.scss */
+  /* line 512, ../proyecto/scss/formato.scss */
   #fotos {
     flex-direction: column;
     align-items: center;
   }
   /*CONTACTO*/
-  /* line 510, ../proyecto/scss/formato.scss */
+  /* line 519, ../proyecto/scss/formato.scss */
   form {
     width: 100%;
   }
-  /* line 514, ../proyecto/scss/formato.scss */
+  /* line 523, ../proyecto/scss/formato.scss */
   textarea {
     min-height: 100px;
     max-height: 200px;
@@ -565,18 +569,18 @@ h2 {
     min-width: 215px;
   }
   /*SUCURSALES*/
-  /* line 523, ../proyecto/scss/formato.scss */
+  /* line 532, ../proyecto/scss/formato.scss */
   #cuerposucursales {
     flex-direction: column;
     text-align: center;
   }
   /*REDES*/
   /*REDES*/
-  /* line 532, ../proyecto/scss/formato.scss */
+  /* line 541, ../proyecto/scss/formato.scss */
   .contenido-redes {
     flex-direction: column;
   }
-  /* line 534, ../proyecto/scss/formato.scss */
+  /* line 543, ../proyecto/scss/formato.scss */
   .contenido-redes div {
     border: none;
   }

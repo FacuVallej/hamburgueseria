@@ -1,3 +1,9 @@
+/*VARIABLES*/
+$color-parrafo: white;
+$fuente-parrafo: monospace;
+$fuente-titulo: tahoma;
+$fuente-banner:courier;
+
 /*CSS*/
 
 * {
@@ -101,6 +107,7 @@ h1 {
     h3 {
         font-size: 40px;
         font-weight: 400;
+        font-family: $fuente-banner;
         padding: 10px 0px;
         text-align: center;
     }
@@ -150,12 +157,14 @@ h1 {
     h4 {
         color: azure;
         font-size: 20px;
+        font-family: $fuente-titulo;
         margin: 15px 0px;
     }
 }
 
 #fotos div p {
-    color: aliceblue;
+    color: $color-parrafo;
+    font-family: $fuente-parrafo;
     font-size: 18px;
 }
 
