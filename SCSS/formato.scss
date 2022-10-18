@@ -16,7 +16,7 @@ header {
     align-items: center;
 }
 
-body{
+body {
     background-color: black;
 }
 
@@ -26,7 +26,7 @@ body{
     font-weight: 200;
 }
 
-.hambur a{
+.hambur a {
     color: aliceblue;
 }
 
@@ -96,18 +96,19 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    h3 {
+        font-size: 40px;
+        font-weight: 400;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    span {
+        font-weight: 600;
+    }
 }
 
-.contenido-banner h3 {
-    font-size: 40px;
-    font-weight: 400;
-    padding: 10px 0px;
-    text-align: center;
-}
-
-.contenido-banner h3 span {
-    font-weight: 600;
-}
 
 .boton-none {
     text-decoration: none;
@@ -123,7 +124,7 @@ h1 {
     background-color: bisque;
 }
 
-.boton{
+.boton {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -144,12 +145,12 @@ h1 {
 
 #fotos div {
     padding: 30px 30px;
-}
 
-#fotos div h4 {
-    color: azure;
-    font-size: 20px;
-    margin: 15px 0px;
+    h4 {
+        color: azure;
+        font-size: 20px;
+        margin: 15px 0px;
+    }
 }
 
 #fotos div p {
@@ -181,14 +182,14 @@ h1 {
 #formulario {
     background-image: url(http://d2r9epyceweg5n.cloudfront.net/stores/001/179/202/products/packoklahoma11-c3f856f422aa8443d915884610590496-640-0.jpg);
     background-size: 100vw 100vh;
-background-attachment: fixed;
-margin: 0;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 form {
     width: 450px;
     margin: auto;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     padding: 100px 80px;
     box-sizing: border-box;
     margin-top: 0px;
@@ -205,7 +206,8 @@ h2 {
     font-family: monospace;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -245,17 +247,18 @@ h3 {
 
 /*MENU ENTERO*/
 
-body{
+body {
     background-color: #000000;
 }
 
-.menus{
+.menus {
     padding: 0;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px 40px;
 }
-.heading{
+
+.heading {
     background-color: rgb(9, 4, 35);
     color: #ffffff;
     margin-bottom: 30px;
@@ -263,50 +266,58 @@ body{
     grid-column: 1/-1;
     text-align: center;
 }
-.heading>h1{
+
+.heading>h1 {
     font-weight: 400;
     font-size: 30px;
     letter-spacing: 10px;
     margin-bottom: 10px;
 }
-.heading>h3{
+
+.heading>h3 {
     font-weight: 600;
     font-size: 22px;
     letter-spacing: 5px;
 }
-.food-items{
+
+.food-items {
     display: grid;
     position: relative;
     grid-template-rows: auto 1fr;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin: 0 20px;
-}
-.food-items img{
-    position: relative;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
+
+    img {
+        position: relative;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
 }
 
-.details{
+.details {
     padding: 20px 10px;
     display: grid;
     grid-template-rows: auto 1fr 50px;
     grid-row-gap: 15px;
 }
-.details-sub{
+
+.details-sub {
     display: grid;
     grid-template-columns: auto auto;
 }
-.details-sub>h5{
+
+.details-sub>h5 {
     font-weight: 600;
     font-size: 18px;
     color: #ffffff;
 }
-.price{
+
+.price {
     text-align: right;
 }
-.details>p{
+
+.details>p {
     color: #6f6f6f;
     font-size: 15px;
     line-height: 28px;
@@ -314,7 +325,8 @@ body{
     align-self: stretch;
     color: #ffffff;
 }
-.details>button{
+
+.details>button {
     background-color: #cb202d;
     border: none;
     color: #ffffff;
@@ -328,25 +340,27 @@ body{
 
 /*CUERPO*/
 
-.nosotros{
+.nosotros {
     padding: 0 50px;
     background-color: black;
 }
 
-#cuerpo h1{
-    font-size: 40px;
-    font-weight: 400;
-    padding: 10px 0px;
-    color: aliceblue;
+#cuerpo {
+    h1 {
+        font-size: 40px;
+        font-weight: 400;
+        padding: 10px 0px;
+        color: aliceblue;
+    }
+
+    p {
+        color: aliceblue;
+        font-size: 17px;
+        padding: 10px 0px;
+    }
 }
 
-#cuerpo p{
-    color: aliceblue;
-    font-size: 17px;
-    padding: 10px 0px;
-}
-
-.video{
+.video {
     display: flex;
     justify-content: center;
     padding: 50px 0px;
@@ -357,14 +371,14 @@ body{
 
 /*local caballito*/
 
-#imagen20{
-display: flex;
-text-align: center;
-justify-content: center;
-margin: 20px 0px;
+#imagen20 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0px;
 }
 
-#sucursal1 p{
+#sucursal1 p {
     text-align: center;
     font-size: 40px;
     color: rgb(255, 255, 255);
@@ -382,24 +396,24 @@ h2 {
     margin: 30px 0;
 }
 
-#imagen30{
+#imagen30 {
     display: flex;
     text-align: center;
     justify-content: center;
     margin: 20px 0px;
-    }
-    
-    #sucursal2 p{
-        text-align: center;
-        font-size: 40px;
-        color: rgb(255, 255, 255);
-    }
-      
-    #maparecoleta {
-        display: flex;
-        justify-content: center;
-        margin: 30px 0;
-    }
+}
+
+#sucursal2 p {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#maparecoleta {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
 
 
 /*REDES*/
@@ -414,12 +428,11 @@ h2 {
     display: flex;
     justify-content: space-between;
     text-align: center;
-}
-
-.contenido-redes div {
+    div {
     flex: 1;
     margin: 20px 0px;
     border-right: 2px solid white;
+}
 }
 
 #foto-twitter {
@@ -428,13 +441,13 @@ h2 {
 
 .contenido-redes div {
     color: black;
-}
-
-.contenido-redes div h6 {
+    h6 {
     font-size: 15px;
     font-weight: 100;
     margin: 10px 0px;
 }
+}
+
 
 .derechos {
     text-align: center;
@@ -479,17 +492,18 @@ h2 {
         right: 0;
     }
 
-/*PRINCIPAL*/
+    /*PRINCIPAL*/
 
- /*FOTOS*/
+    /*FOTOS*/
     #fotos {
         flex-direction: column;
         align-items: center;
     }
 
-/*CONTACTO*/
+    /*CONTACTO*/
 
- form {width: 100%;
+    form {
+        width: 100%;
     }
 
     textarea {
@@ -499,22 +513,21 @@ h2 {
         min-width: 215px;
     }
 
-/*SUCURSALES*/
+    /*SUCURSALES*/
 
- #cuerposucursales {
+    #cuerposucursales {
         flex-direction: column;
         text-align: center;
     }
 
-/*REDES*/
+    /*REDES*/
 
-/*REDES*/
+    /*REDES*/
 
- .contenido-redes {
-    flex-direction: column;
-}
-
-.contenido-redes div {
-    border: none;
-}
+    .contenido-redes {
+        flex-direction: column;
+        div {
+        border: none;
+    }
+    }
 }
